@@ -1,6 +1,6 @@
 #  Greensense: Smart Plant Monitoring and Management System (IoT-Enabled)
 
-This repository contains a **full-stack IoT-enabled system** for monitoring and managing plants in real-time. It integrates sensors, cameras, and an automated irrigation system with a **React frontend** and a **Node.js backend**, using WebSockets for real-time communication and **MariaDB** hosted on a Raspberry Pi.
+This repository contains a **full-stack IoT-enabled system** for monitoring and managing plants in real-time. It integrates sensors, cameras, and an automated irrigation system with a **React frontend** and a **Node.js backend**, using MQTT for real-time communication and **MariaDB** hosted on a Raspberry Pi.
 
 ---
 
@@ -26,7 +26,7 @@ This repository contains a **full-stack IoT-enabled system** for monitoring and 
   - Activate or deactivate irrigation with real-time feedback.
 
 ### Backend (Node.js)
-- **WebSocket Integration**:
+- **MQTT Integration**:
   - Enables real-time updates for monitoring and irrigation control.
 - **IoT Device Communication**:
   - Connects to sensors and actuators via Raspberry Pi.
@@ -50,7 +50,7 @@ This repository contains a **full-stack IoT-enabled system** for monitoring and 
 ## System Architecture
 
 - **Frontend**: React-based UI.
-- **Backend**: Node.js server with WebSocket support.
+- **Backend**: Node.js server with MQTT support.
 - **Database**: MariaDB hosted on Raspberry Pi.
 - **IoT Hardware**:
   - **Sensors**: Temperature and humidity monitoring.
@@ -68,9 +68,9 @@ This repository contains a **full-stack IoT-enabled system** for monitoring and 
 - **Fetch API**: To communicate with the backend.
 
 ### **Backend**
-- **Node.js**: For server logic and WebSocket communication.
+- **Node.js**: For server logic and MQTTcommunication.
 - **Express.js**: For handling RESTful routes.
-- **HiveMQ WebSocket**: For real-time updates.
+- **MQTT**: For real-time updates.
 
 ### **Database**
 - **MariaDB**: For efficient and scalable data management.
